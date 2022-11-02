@@ -1,24 +1,20 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+テーブル名：users
 
-Things you may want to cover:
+| No  | カラム名        | データ型 | Not NULL | key   |
+|:---:| --------------- | -------- | -------- | ----- |
+|  1  | id              | integer  | ○        | ⚪︎PK |
+|  2  | name            | string   | ○        |       |
+|  3  | email           | string   | ○        |       |
+|  4  | password_digest | string   | ○        |       |
 
-* Ruby version
 
-* System dependencies
+テーブル名：blogs
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| No  | カラム名 | データ型 | Not NULL | key   |
+|:---:| -------- | -------- | -------- | ----- |
+|  1  | id       | integer  | ○        | ⚪︎PK |
+|  2  | title    | string   | ○        |       |
+|  3  | content  | text     | ○        |       |
+|  4  | user_id  | integer  | ○        | ⚪︎FK |
